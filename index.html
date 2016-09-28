@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Perfil del Cargo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="include/css/bootstrap.min.css">
+  <script src="include/js/jquery.js"></script>
+  <script src="include/js/bootstrap.min.js"></script>
+</head>
+<body style="margin:60px">
+
+<!-- MENU -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#Link1">Link1</a></li>
+        <li><a href="#Link2">Link2</a></li>
+        <li><a href="#Link3">Link3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Ends MENU -->
+
+
+
+<div class="container">
+  <h2>Perfil del Cargo</h2>
+  
+
+<div class="container">
+
+  
+<!-- begins the mini menu -->
+   <ul class="nav nav-tabs nav-justified"> 
+    <li class="active"><a data-toggle="tab" href="#perfil">Datos del Perfil</a></li>
+    <li><a data-toggle="tab" href="#comp">Competencias</a></li>
+  </ul>
+<!-- ends mini menu -->
+
+  <div class="panel panel-default">
+  <div class="panel-body">
+
+<!-- begins tabs content -->
+  <div class="tab-content"> 
+  <!-- Perfil content -->
+  <div id="perfil" class="row tab-pane fade in active">
+
+     <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-md-2" for="Nombre_Perfil">Nombre:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Nombre_Perfil" placeholder="Nombre del cargo">
+        </div>
+
+        <label class="control-label col-md-2" for="Sede_Perfil">Sede:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Sede_Perfil" placeholder="Sede de la empresa">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-md-2" for="Campo_Perfil">Campo:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Campo_Perfil" placeholder="Campo del cargo">
+        </div>
+
+        <label class="control-label col-md-2" for="Idiomas_Perfil">Idiomas:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Idiomas_Perfil" placeholder="Idiomas necesarios">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-md-2" for="Exp_Perfil">Experiencia:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Exp_Perfil" placeholder="Experiencia necesaria">
+        </div>
+
+        <label class="control-label col-md-2" for="Salario_Perfil">Condiciones Salariales:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Salario_Perfil" placeholder="Salario del cargo">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-12" align="center">
+          <button type="submit" class="btn btn-default" >Crear</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+<!-- Competencia content -->
+
+  <div id="comp" class="row tab-pane fade">
+    <div class="col-md-6">
+    <h3 align="center"> Competencias Agregadas </h3>
+    <br>
+      <div class="table-responsive">          
+      <table class="table table-hover">
+        <thead>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Competencia 1</td>
+            <td><span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal2" data-keyboard="true"  > Editar</span></td>
+            <td><span class="glyphicon glyphicon-minus"> Eliminar </span></td>
+          </tr>
+          <tr>
+            <td>Competencia 2</td>
+            <td><span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal2" data-keyboard="true" > Editar</span></td>
+            <td><span class="glyphicon glyphicon-minus"> Eliminar </span></td>
+          </tr>
+          <tr>
+            <td>Competencia 3</td>
+            <td><span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal2" data-keyboard="true" > Editar</span></td>
+            <td><span class="glyphicon glyphicon-minus"> Eliminar </span></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+
+    </div>
+    <div class="col-md-6">
+      <p> Busca y agrega nuevas competencias a la lista de competencias requeridas a la izquierda, usa la barra de busqueda de abajo. Si no consigues la competencia deseada crea una nueva competencia.</p>
+     <form class="form-horizontal">
+      <div class="form-group">
+      <div class="col-md-4">
+        <input type="text" class="form-control" id="Nombre_Comp" placeholder="Nombre">
+      </div>
+      <button type="submit" class="btn btn-default" >Buscar</button>
+      </div>
+      </form>
+
+      <div class="table-responsive">          
+      <table class="table table-hover">
+        <thead>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Competencia 4</td>
+            <td><span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal2" data-keyboard="true"  > Editar</span></td>
+            <td><span class="glyphicon glyphicon-plus"> Agregar </span></td>
+          </tr>
+          <tr>
+            <td>Competencia 5</td>
+            <td><span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal2" data-keyboard="true" > Editar</span></td>
+            <td><span class="glyphicon glyphicon-plus"> Agregar </span></td>
+          </tr>
+          <tr>
+            <td>Competencia 6</td>
+            <td><span class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal2" data-keyboard="true" > Editar</span></td>
+            <td><span class="glyphicon glyphicon-plus"> Agregar </span></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal" data-keyboard="true" >Crear nueva competencia</button> 
+    </div>
+  </div>
+
+</div> <!-- end tabs content -->
+
+
+</div> <!-- End panel body -->
+</div> <!-- End panel -->
+
+</div>
+
+
+  <!-- Modals -->
+
+<!-- Create Competencia -->
+  <div class="modal fade" id="myModal" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Nueva Competencia</h4>
+        </div>
+        <div class="modal-body">
+
+<!-- Body Content-->
+     <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-md-2" for="Nombre_Comp">Nombre:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Nombre_Comp" placeholder="Nombre del cargo">
+        </div>
+
+        <label class="control-label col-md-2" for="Nivel_Comp">Nivel:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Nivel_Comp" placeholder="Nivel de dominio">
+        </div>
+      </div>
+    </form>
+
+<!-- Ends Body Content-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Crear</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- Edit Competencia -->
+    <div class="modal fade" id="myModal2" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Competencia</h4>
+        </div>
+        <div class="modal-body">
+
+<!-- Body Content-->
+     <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-md-2" for="Nombre_Comp">Nombre:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Nombre_Comp" placeholder="Nombre del cargo">
+        </div>
+
+        <label class="control-label col-md-2" for="Nivel_Comp">Nivel:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Nivel_Comp" placeholder="Nivel de dominio">
+        </div>
+      </div>
+    </form>
+
+<!-- Ends Body Content-->
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Guardar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  
+</div>
+
+</body>
+</html>
