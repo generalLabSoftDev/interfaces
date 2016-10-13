@@ -191,6 +191,100 @@ td,
 th {
   padding: 0;
 }
+
+#ban{
+  width: 1400px;
+  height: 375px;
+}
+
+#modi{
+  height: 270px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#modi form .form-group{
+  padding-bottom: 10px;
+  padding-top: 10px; 
+
+}
+
+
+
+
+.nav-tabs > li.pill > a{
+background-color:  #cccccc;
+border-top-width: 1px;
+border-right-width: 3px;
+border-top-color: black;
+border-right-color: black;
+}
+
+#mod_reg{
+  padding-left: 80px;
+  padding-right: 80px;
+
+}
+
+#myModalreg .modal-dialog .modal-content .modal-footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+#mod_reg form .form-group{
+  padding-top: 2px;
+  padding-bottom: 4px;
+
+}
+
+.p{
+  width: 50px;
+
+  }
+
+span.forg a:hover{
+  color: black;
+  text-decoration: none;
+
+}
+
+.menu-edit{
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+
+.campo{
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+#prof form .form-group div{
+  
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+#pers{
+  
+  padding-bottom: 20px;
+
+}
+
+#p-prof{
+  border-color: #0099cc;
+  border-width: 2px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
@@ -227,10 +321,10 @@ th {
   }
   tr,
   img {
-    page-break-inside: avoid;
+   // page-break-inside: avoid;
   }
   img {
-    max-width: 100% !important;
+   // max-width: 100% !important;
   }
   p,
   h2,
@@ -3349,6 +3443,7 @@ fieldset[disabled] .btn-warning.focus {
   color: #fff;
   background-color: #d9534f;
   border-color: #d43f3a;
+  float: left;
 }
 .btn-danger:focus,
 .btn-danger.focus {
@@ -4964,7 +5059,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: #fff;
 }
 .jumbotron h1,
 .jumbotron .h1 {

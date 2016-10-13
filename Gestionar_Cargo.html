@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Perfil del Cargo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="include/css/bootstrap.css">
+  <link rel="stylesheet" href="include/css/style.css">
+  <script src="include/js/jquery.js"></script>
+  <script src="include/js/bootstrap.min.js"></script>
+</head>
+<body style="margin-bottom:60px; background-color: #00bfff;" >
+
+<!-- MENU -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Home.html">Headhunters</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#Link1">Gestionar Perfil</a></li>
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Perfil</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Ver Perfil</a></li>
+            <li><a href="Home.html">Cerrar Sesión</a></li>
+          </ul>
+
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Ends MENU -->
+<!-- FOOTER -->
+<nav class="navbar navbar-default navbar-fixed-bottom" >
+  <div class="container">
+    <p class="text-muted" align="middle"> Creado por los estudiantes del Laboratorio General del Desarrollo de Software. 2016</p>
+    </div>
+</nav>
+<!-- Ends FOOTER -->
+<!-- BANNER -->
+  
+   <img id="ban" src="include/img/banner3.jpg" class="img-responsive" >
+  
+
+<!-- Ends BANNER -->
+
+
+<div class="container">
+  <h2 style="color:#fff;">Perfil del Cargo</h2>
+  
+
+<div class="container">
+
+  
+<!-- begins the mini menu -->
+   <ul class="nav nav-tabs nav-justified"> 
+    <li class="active pill"><a data-toggle="tab" href="#perfil">Datos del Perfil</a></li>
+    <li><a class="pill" data-toggle="tab" href="#comp">Competencias</a></li>
+  </ul>
+<!-- ends mini menu -->
+
+  <div class="panel panel-default">
+  <div class="panel-body">
+
+<!-- begins tabs content -->
+  <div class="tab-content"> 
+  <!-- Perfil content -->
+  <div id="perfil" class="row tab-pane fade in active">
+
+     <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-md-2" for="Nombre_Perfil">Nombre:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Nombre_Perfil" placeholder="Nombre del cargo">
+        </div>
+
+        <label class="control-label col-md-2" for="Sede_Perfil">Sede:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Sede_Perfil" placeholder="Sede de la empresa">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-md-2" for="Campo_Perfil">Campo:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Campo_Perfil" placeholder="Campo del cargo">
+        </div>
+
+        <label class="control-label col-md-2" for="Idiomas_Perfil">Idiomas:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Idiomas_Perfil" placeholder="Idiomas necesarios">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-md-2" for="Exp_Perfil">Experiencia:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Exp_Perfil" placeholder="Experiencia necesaria">
+        </div>
+
+        <label class="control-label col-md-2" for="Salario_Perfil">Condiciones Salariales:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Salario_Perfil" placeholder="Salario del cargo">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-12" align="center">
+          <button type="submit" class="btn btn-default" >Crear</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+<!-- Competencia content -->
+
+  <div id="comp" class="row tab-pane fade">
+    <div class="col-md-6">
+    <h3 align="center"> Competencias Agregadas </h3>
+    <br>
+    <ul id="list" class="list-group">
+      <li href="#" class="list-group-item"> Competencia 1<span style="cursor: pointer;" class="badge" onclick="eliminar(this);"> Eliminar</span> <span style="cursor: pointer;" class="badge" data-toggle="modal" data-target="#myModal2" data-keyboard="true"> Editar</span></li>
+      <li href="#" class="list-group-item"> Competencia 2<span style="cursor: pointer;" class="badge" onclick="eliminar(this);"> Eliminar</span> <span style="cursor: pointer;" class="badge" data-toggle="modal" data-target="#myModal2" data-keyboard="true"> Editar</span></li>
+      <li href="#" class="list-group-item"> Competencia 3<span style="cursor: pointer;" class="badge" onclick="eliminar(this);"> Eliminar</span> <span style="cursor: pointer;" class="badge" data-toggle="modal" data-target="#myModal2" data-keyboard="true"> Editar</span></li>
+    </ul>
+
+    </div>
+    <div class="col-md-6">
+      <p> Busca y agrega nuevas competencias a la lista de competencias requeridas a la izquierda, usa la barra de busqueda de abajo. Si no consigues la competencia deseada crea una nueva competencia.</p>
+     <form class="form-horizontal">
+      <div class="form-group">
+      <div class="col-md-4">
+        <input type="text" class="form-control" id="Nombre_Comp" placeholder="Nombre">
+      </div>
+      <button type="submit" class="btn btn-default" >Buscar</button>
+      </div>
+      </form>
+    <ul id="search" class="list-group">
+      <li href="#" class="list-group-item"> Competencia 4<span style="cursor: pointer;" class="badge" onclick="agregar(this);"> Agregar</span> <span style="cursor: pointer;" class="badge" data-toggle="modal" data-target="#myModal2" data-keyboard="true"> Editar</span></li>
+      <li  class="list-group-item"> Competencia 5<span style="cursor: pointer;" class="badge" onclick="agregar(this);"> Agregar</span> <span style="cursor: pointer;" class="badge" data-toggle="modal" data-target="#myModal2" data-keyboard="true"> Editar</span></li>
+      <li class="list-group-item"> Competencia 6<span style="cursor: pointer;" class="badge" onclick="agregar(this);"> Agregar</span> <span style="cursor: pointer;" class="badge" data-toggle="modal" data-target="#myModal2" data-keyboard="true"> Editar</span></li>
+    </ul>
+      <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal" data-keyboard="true" >Crear nueva competencia</button> 
+    </div>
+  </div>
+
+</div> <!-- end tabs content -->
+
+
+</div> <!-- End panel body -->
+</div> <!-- End panel -->
+
+</div>
+
+
+  <!-- Modals -->
+
+<!-- Create Competencia -->
+  <div class="modal fade" id="myModal" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Nueva Competencia</h4>
+        </div>
+        <div class="modal-body">
+
+<!-- Body Content-->
+     <form class="form-horizontal">
+      <div class="form-group" style="padding-top: 15px;">
+        <label class="control-label col-md-4" for="Nombre_Comp">Descripción de Competencia:</label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="Nombre_Comp" placeholder="Nombre del cargo">
+        </div>
+      </div>
+    </form>
+
+<!-- Ends Body Content-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Crear</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- Edit Competencia -->
+    <div class="modal fade" id="myModal2" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Competencia</h4>
+        </div>
+        <div class="modal-body">
+
+<!-- Body Content-->
+     <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-md-2" for="Nombre_Comp">Nombre:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Nombre_Comp" placeholder="Nombre del cargo">
+        </div>
+
+        <label class="control-label col-md-2" for="Nivel_Comp">Nivel:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="Nivel_Comp" placeholder="Nivel de dominio">
+        </div>
+      </div>
+    </form>
+
+<!-- Ends Body Content-->
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Guardar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  
+</div>
+<script>
+
+function eliminar (e){
+e.setAttribute("onclick", "agregar(this);");
+e.innerHTML="Agregar";
+var aux = e.closest("li");
+$("#search").append(aux);
+}
+function agregar (e){
+e.setAttribute("onclick", "eliminar(this);");
+e.innerHTML="Eliminar";
+var aux = e.closest("li");
+$("#list").append(aux);
+}
+
+</script>
+
+</body>
+</html>
