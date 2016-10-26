@@ -214,11 +214,18 @@ th {
 
 .nav-tabs > li.pill > a{
 background-color:  #cccccc;
-border-top-width: 1px;
-border-right-width: 3px;
-border-top-color: black;
-border-right-color: black;
+//border-top-width: 1px;
+//border-right-width: 3px;
+//border-top-color: black;
+//border-right-color: black;
+border-color: black;
 }
+
+.nav-tabs > li.pill > a:hover{
+background-color:  #8c8c8c;
+
+}
+
 
 #mod_reg{
   padding-left: 80px;
@@ -264,7 +271,7 @@ span.forg a:hover{
 
 }
 
-#prof form .form-group div{
+#prof form .form-group div, #acad form .form-group div {
   
   padding-left: 30px;
   padding-right: 30px;
@@ -284,6 +291,36 @@ span.forg a:hover{
   margin-right: 50px;
 }
 
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #006bb3 !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+
+div.h_regi{
+  margin-right: 15px;
+  margin-left: -40px;
+  border-radius:6px 6px 6px 6px;
+  box-shadow: 5px 5px 10px #3D3E3F;
+  background-color: white;
+  padding-bottom: 10px;
+ } 
+
+
+ div.h_regd{
+  margin-right: -50px;
+  margin-left: 40px;
+  border-radius:6px 6px 6px 6px;
+  box-shadow: 5px 5px 10px #3D3E3F;
+  background-color: white;
+  padding-bottom: 10px;
+ } 
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
@@ -1184,7 +1221,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background-color: #006bb3;
 }
 input,
 button,
@@ -1680,7 +1717,7 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
+  padding-right:15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
