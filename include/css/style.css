@@ -271,6 +271,48 @@ span.forg a:hover{
 
 }
 
+.camp_t{
+  padding-top: 15px;
+  padding-left: 750px;
+  padding-right: 100px;
+
+}
+
+.camp_t > div > input{
+  
+   border: #006bb3 3px solid;
+   background-color: #d9d9d9;
+   color: black;
+  text-align: center;
+}
+
+.campo_f{
+  padding-right: 100px;
+  padding-left: 20px;
+}
+
+#subt{
+padding-top: 20px;
+padding-bottom: 10px;
+
+}
+
+
+#check_p{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 450px;
+  padding-right: 100px;
+}
+
+
+#check_psi{
+  padding-top: 30px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 100px;
+}
+
 #prof form .form-group div, #acad form .form-group div {
   
   padding-left: 30px;
@@ -284,11 +326,90 @@ span.forg a:hover{
 
 }
 
+#tabla{
+  padding-top: 25px;
+  padding-left: 150px;
+  padding-right: 150px;
+
+}
+
+#tabla > table > thead > tr > th, #tabla > table > thead  {
+
+  border: black 3px solid;
+}
+
+
+#tabla > table {
+
+  border: #006bb3 4px solid;
+}
+
+
+
+#tabla > table > tbody > tr, #tabla > table > tbody > tr > td{
+
+ border: #006bb3 2px solid;
+
+}
+
+#contacto{
+  
+  background-color: #fff;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  
+}
+
+#nosotros{
+ margin-top:-30px;
+ background-color: #fff;
+ margin-bottom: 30px; 
+}
+
+
+#precios{
+
+  background-color: #fff;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-radius:6px 6px 6px 6px;
+  box-shadow: 5px 5px 10px #3D3E3F;
+
+}
+
 #p-prof{
   border-color: #0099cc;
   border-width: 2px;
   margin-left: 50px;
+  margin-right: 200px;
+}
+
+#psi_t{
+  border-color: #0099cc;
+  border-width: 2px;
+  margin-left: 50px;
   margin-right: 50px;
+}
+
+.pan_p .col-sm-4 .panel .panel-heading{
+
+  color: #fff;
+  background-color: #006bb3; 
+
+}
+
+.pan_p .col-sm-4 .panel{
+  
+border: 1px solid #006bb3;
+
+}
+
+#car_imag #myCarousel .carousel-inner > .item > img,
+ #car_imag #myCarousel .carousel-inner > .item > a > img {
+      width: 100%;
+      height: 550px;
+      margin: auto;
+
 }
 
 
@@ -5093,8 +5214,6 @@ a.badge:focus {
 }
 .jumbotron {
   padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
   color: inherit;
   background-color: #fff;
 }

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Informe de Evaluación</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="include/css/bootstrap.css">
+  <link rel="stylesheet" href="include/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="include/js/jquery.js"></script>
+  <script src="include/js/bootstrap.min.js"></script>
+</head>
+<body style="margin-bottom:60px; " >
+
+<!-- MENU -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="">Headhunters</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mi Perfil</a>
+              <ul class="dropdown-menu">
+                <li><a href="Editar_Perfil.html"> Editar Perfil</a></li>
+                <li><a href="Home.html"> Cerrar Sesión</a></li>
+              </ul>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Ends MENU -->
+<!-- FOOTER -->
+<nav class="navbar navbar-default navbar-fixed-bottom" >
+  <div class="container">
+    <p class="text-muted" align="middle"> Creado por los estudiantes del Laboratorio General del Desarrollo de Software. 2016</p>
+    </div>
+</nav>
+<!-- Ends FOOTER -->
+
+ 
+
+
+          <div class="container menu-edit">
+
+
+                  <div class="panel panel-default">
+                  <div class="panel-body">
+
+                      <h2 align="center"> Informe de Evaluación </h2>
+
+                      
+                     
+                        <form class="form-horizotal">
+
+                        <!--  Datos Personales -->
+                          <h3 align="left"> I.   Datos de Identificación del Evaluado </h3>
+                    <div class="row">
+     
+                            <div class="form-group">
+                                <div class="col-md-6 campo">
+                                  <label>Nombres:</label>
+                                  <input type="text" class=" form-control" name="fname" placeholder="Juan Andres" required>
+                                  </div>
+                                <div class="col-md-6 campo">
+                                  <label >Apellidos:</label>
+                                  <input type="text" class=" form-control" name="lname" placeholder="Perez Rodríguez" required>
+                                 </div>   
+                          </div>
+
+                          <div class="form-group">
+                                <div class="col-md-6 campo">
+                                  <label>Cédula:</label>
+                                  <input type="text" class=" form-control" name="fname" placeholder="10.458.987" required>
+                                  </div>
+                                <div class="col-md-6 campo">
+                                  <label >Edad:</label>
+                                  <input type="text" class=" form-control" name="lname" placeholder="18" required>
+                                 </div>   
+                          </div>
+
+                          <div class="form-group">
+                                <div class="col-md-4 campo">
+                                  <label>Estado Civil:</label>
+                                  <select id="list_e" class="form-control" required>
+                                    <option value="soltero">Soltero</option>
+                                    <option value="casado">Casado</option>
+                                    <option value="divorciado">Divorciado</option>
+                                    <option value="viudo">Viudo</option>
+                                  </select>
+                                  </div>
+                                <div class="col-md-4 campo">
+                                  <label >Número telefónico (local):</label>
+                                    <input type="texto" class="form-control" name="telf_l" placeholder="0212-1234567" required>
+                                 </div>
+                                 <div class="col-md-4 campo">
+                                  <label >Número Telefónico (móvil):</label>
+                                    <input type="text" class="form-control" name="telf_m" placeholder="0424-1264567" required>
+                                 </div>     
+                          </div>
+
+                          <div class="form-group">
+                                <div class="col-md-6 campo">
+                                  <label>Grado de Instrucción:</label>
+                                  <input type="text" class=" form-control" name="grado_i" required>
+                                  </div>
+                                <div class="col-md-6 campo">
+                                  <label >Fecha de Evaluación:</label>
+                                  <input type="date" class=" form-control" name="fecha_e" required>
+                                 </div>   
+                          </div>
+
+                          <div class="form-group">
+                                <div class="col-md-6 campo">
+                                  <label>Evaluador:</label>
+                                  <input type="text" class=" form-control" name="n_eval" placeholder="María Rodríguez" required>
+                                  </div>
+                                <div class="col-md-6 campo">
+                                  <label >Cargo a Optar:</label>
+                                  <input type="text" class=" form-control" name="n_cargo" required>
+                                 </div>   
+                          </div>
+                      </div>
+                          <!-- Fin Datos Personales -->
+
+
+                          <!-- Instrumentos Utilizados -->
+                             <h3 align="left"> II.   Instrumentos Utilizados  (Max. 25 pts.) </h3>
+                    <div class="row">
+                          <div class="form-group">
+                                <div class="col-md-8 campo">
+                                  <label>Nombre de Test Normado:</label>
+                                  <input type="text" class=" form-control" name="n_test" placeholder="Nombre Test n" required>
+                                  </div>
+                                <div class="col-md-4 campo">
+                                  <label >Puntaje:</label>
+                                  <input type="text" class=" form-control" name="puntaje_t" required>
+                                 </div>   
+                          </div>
+
+                          <div class="form-group">
+                                <div class="col-md-8 campo">
+                                  <label>Nombre de Test Normado:</label>
+                                  <input type="text" class=" form-control" name="n_test" placeholder="Nombre Test n" required>
+                                  </div>
+                                <div class="col-md-4 campo">
+                                  <label >Puntaje:</label>
+                                  <input type="text" class=" form-control" name="puntaje_t" required>
+                                 </div>   
+                          </div>
+
+                          <div class="form-group">
+                                <div class="col-md-8 campo">
+                                  <label>Nombre de Test Normado:</label>
+                                  <input type="text" class=" form-control" name="n_test" placeholder="Nombre Test n" required>
+                                  </div>
+                                <div class="col-md-4 campo">
+                                  <label >Puntaje:</label>
+                                  <input type="text" class=" form-control" name="puntaje_t" required>
+                                 </div>   
+                          </div>
+
+                          <div class="form-group">
+                              <div class="col-md-12" align="left" style="padding-top: 30px;">
+                                 <button type="submit" class="btn btn-primary" style="width: 150px;" ><i class="fa fa-plus fa-lg"></i>  Agregar Test</button>
+                              </div>
+                          </div>
+
+                          <div class="form-group camp_t">
+                                
+                                <div class="col-md-12">
+                                  <label >Puntaje Obtenido:</label>
+                                  <input type="text" class=" form-control" name="total_t" required>
+                                 </div>   
+                          </div>
+
+                            <div id="subt">
+                                <h4 align="center"> CAPACIDAD INTELECTUAL GENERAL (Test de Matrices Progresivas, J.C. Raven):</h4>
+                                <h4 align="center"> Puntaje Bruto Percentil Curva de Desempeño Capacidad Intelectual: </h4>
+                            </div>
+
+
+                           <div id ="check_p" class="form-group">
+                                                  
+                              <div class="col-md-12">
+                                     
+                                      <label class="checkbox-inline"><input type="checkbox">15</label>
+                                   
+                                      <label class="checkbox-inline"><input type="checkbox">25</label>
+
+                                      <label class="checkbox-inline"><input type="checkbox">50</label>
+                                    
+                                      <label class="checkbox-inline"><input type="checkbox">75</label>
+
+                                      <label class="checkbox-inline"><input type="checkbox">95</label>
+                                   
+                              </div>
+                          </div>   
+                          
+                           
+
+
+                  <div id="psi_t" class="panel">
+                        <div class="panel-body">
+                              <div class="form-group">
+                                    <div class="col-md-6 campo">
+                                      <label >Nombre Test Proyectivo:</label>
+                                      <input type="text" class=" form-control" name="total_t" required>
+                                     </div>
+                                       
+                              </div>
+                              <div class="form-group">
+                                    <div class="col-md-8 campo">
+                                      <label >OBSERVACIONES PSICOTÉCNICAS Test Proyectivo:</label>
+                                      <textarea class="form-control" rows="3" name="obs" required></textarea>
+                                     </div>
+                                     
+                              </div>
+                              
+                          </div>
+                      </div>
+
+                              <div class="form-group">
+                                  <div class="col-md-12" align="left" style="padding-top: 30px;">
+                                     <button type="submit" class="btn btn-primary" style="width: 150px;" ><i class="fa fa-plus fa-lg"></i>  Agregar Test</button>
+                                  </div>
+                              </div>
+
+
+
+                    </div>
+
+
+                          <!-- Fin Instrumentos Utilizados -->
+                          
+
+                          <!--  Entrevista -->   
+
+                              <h3 align="left"> III.  Entrevista  (Max. 25 pts.) </h3>
+                      <div class="row">
+
+                        <div id="tabla">
+                          <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>AREA</th>
+                                  <th>PUNTAJE</th>
+                                </tr>                               
+                              </thead>
+                              
+                              <tbody>
+                                <tr>
+                                  <td>LABORAL</td>
+                                  <td><input type="text" class="form-control" name="lab"></td>
+                                </tr>
+                                <tr>
+                                  <td>FAMILIAR-SOCIAL</td>
+                                  <td><input type="text" class="form-control" name="fm_sc"></td>
+                                </tr>
+                                <tr>
+                                  <td>COMUNICACIÓN</td>
+                                  <td><input type="text" class="form-control" name="com"></td>
+                                </tr>
+                                <tr>
+                                  <td>PSICOLÓGICA</td>
+                                  <td><input type="text" class="form-control" name="psico"></td>
+                                </tr>
+
+                              </tbody>
+
+                          </table>
+                        </div>
+                          <div class="form-group camp_t">
+                                
+                                <div class="col-md-12">
+                                  <label >Puntaje Obtenido:</label>
+                                  <input type="text" class=" form-control" name="total_t" required>
+                                 </div>   
+                          </div>
+
+                          <div class="form-group">
+                                    <div class="col-md-8 campo">
+                                      <label >DATOS GENERALES:</label>
+                                      <textarea class="form-control" rows="3" name="d_gen" required></textarea>
+                                     </div>
+                                     
+                          </div>
+
+                          <div class="form-group">
+                                    <div class="col-md-8 campo">
+                                      <label >ACTITUD DURANTE EL PROCESO DE EVALUACIÓN:</label>
+                                      <textarea class="form-control" rows="3" name="act_e" required></textarea>
+                                     </div>
+                                     
+                          </div>
+
+                          <div class="form-group campo_f">
+                                
+                                <div class="col-md-10">
+                                  <label >Valores:</label>
+                                  <input type="text" class=" form-control" name="total_t" required>
+                                 </div>   
+                          </div>
+
+                          <div class="form-group campo_f">
+                                
+                                <div class="col-md-10">
+                                  <label >Salud:</label>
+                                  <input type="text" class=" form-control" name="total_t" required>
+                                 </div>   
+                          </div>
+
+                          <div class="form-group campo">
+                                
+                                <div id ="check_psi" class="col-md-12">
+                                  <label>Hábitos Psicobiológicos:  </label>
+
+                                     <label class="checkbox-inline"><input type="checkbox">Tabaco</label>
+                                   
+                                      <label class="checkbox-inline"><input type="checkbox">Alcohol</label>
+
+                                      <label class="checkbox-inline"><input type="checkbox">Cafeína</label>
+                                    
+                                      <label class="checkbox-inline"><input type="checkbox">Fármacos</label>
+
+                                      <label class="checkbox-inline"><input type="checkbox">Sueño</label>
+
+                                      <label class="checkbox-inline"><input type="checkbox">Alimentación</label>
+
+                                 </div>   
+                              </div> 
+                            
+                              <div class="form-group campo_f">
+                                    <div class="col-md-6">
+                                      <label >Otras Drogas:</label>
+                                      <input type="text" class="form-control" name="otro" required>
+                                    </div> 
+                               </div>        
+                      </div>
+
+      
+                          <!-- Fin Entrevista -->
+
+                          
+                        <div class="form-group">
+                            <div class="col-md-12" align="center" style="padding-top: 30px;">
+                               <button type="submit" class="btn btn-primary" style="width: 150px;" >Guardar</button>
+                            </div>
+                        </div>            
+
+
+                        </form>
+
+
+                  </div><!-- Fin Panel-Body-->
+                  </div><!-- Fin Panel-->
+
+      
+ 
+
+          </div>
+
+  
+
+</body>
+</html>

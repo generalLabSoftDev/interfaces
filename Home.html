@@ -10,7 +10,7 @@
   <script src="include/js/jquery.js"></script>
   <script src="include/js/bootstrap.min.js"></script>
 </head>
-<body style="margin-bottom:60px;" >
+<body style="margin-bottom:60px;" data-spy="scroll" data-target=".navbar" data-offset="90" >
 
 <!-- MENU -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -25,6 +25,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#registro">Registro</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
         <li data-toggle="modal" data-target="#myModalinit"><a href="#">Iniciar Sesión</a></li>
       </ul>
     </div>
@@ -39,16 +43,88 @@
 </nav>
 <!-- Ends FOOTER -->
 
+
+ <div id="car_imag">
+          
+           <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="include/img/ini1.jpg" alt="imagen1" >
+                    </div>
+
+                    <div class="item">
+                      <img src="include/img/ini2.jpg" alt="imagen2" >
+                    </div>
+                  
+                    <div class="item">
+                      <img src="include/img/ini3.png" alt="imagen3" >
+                    </div>
+
+                    <div class="item">
+                      <img src="include/img/ini4.jpg" alt="imagen4" >
+                    </div>
+
+                    <div class="item">
+                      <img src="include/img/ini5.jpg" alt="imagen5" >
+                    </div>
+
+                    <div class="item">
+                      <img src="include/img/ini6.jpg" alt="imagen6" >
+                    </div>
+
+                    <div class="item">
+                      <img src="include/img/ini7.jpg" alt="imagen7">
+                    </div>
+
+                  </div>
+
+                  
+          </div>
+
+ </div>   <!--    fin Carousel          -->
+
+
+
+
+
  <div class="jumbotron text-center">
       <h1> HeadHunters </h1>
       
-  </div>  
+  </div> <!--    fin jumbotron          --> 
+
+    
+<div id="nosotros" class="container-fluid">
+  <div class="row slideanim">
+    <div class="col-sm-8">
+      <h2>Información sobre Headhunters</h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      
+    </div>
+    <div class="col-sm-4">
+      
+    </div>
+  </div>
+</div> <!-- fin nosotros -->
 
 
 
-<div class="container">
+
+<div id="registro" class="container">
  
-    <div class="row">
+    <div class="row slideanim">
 
         <div class="col-md-6 h_regi">
           <center>
@@ -69,7 +145,114 @@
 
     </div>
       
-</div>
+
+
+</div>    <!--      Fin Registros            -->
+
+
+<div id="precios" class="container">
+  <div class="text-center">
+    <h2>Precios</h2>
+    <h4>Si eres una empresa, te ofrecemos los siguientes planes</h4>
+  </div>
+  <div class="row slideanim pan_p">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading ">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>Mensual</h4>
+          <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModalregemp">Registrase</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading ">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>Mensual</h4>
+          <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModalregemp">Registrarse</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading ">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>Mensual</h4>
+          <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModalregemp">Registrarse</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  <!--    fin precios    -->
+
+
+
+    
+  <div id="contacto" class="container-fluid">
+        <h2 class="text-center">CONTACTO</h2>
+        <div class="row slideanim">
+          <div class="col-md-5">
+            <p>Contáctanos si necesitas saber más sobre nuestros planes</p>
+            <p><i class="fa fa-map-marker"></i> Caracas, Vzla</p>
+            <p><i class="fa fa-phone"></i> +58 0212123456</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> correo@gmail.com</p>
+          </div>
+          <div class="col-md-7">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input class="form-control" id="name" name="name_c" placeholder="Nombre" type="text" required>
+              </div>
+              <div class="col-md-6 form-group">
+                <input class="form-control" id="email" name="email_c" placeholder="Correo" type="email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comment_C" placeholder="Comentario" rows="5"></textarea><br>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <button class="btn btn-success pull-right" type="submit">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>   <!--    fin contacto    -->
+
+
+
+
+
+
+
 
 
   <!--Modals-->
@@ -263,6 +446,44 @@
       
     </div>
   </div><!-- Ends Modal Reg Emp-->
+
+
+<script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links in navbar + footer link
+          $(".navbar a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 900, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+          
+          $(window).scroll(function() {
+            $(".slideanim").each(function(){
+              var pos = $(this).offset().top;
+
+              var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                  $(this).addClass("slide");
+                }
+            });
+          });
+        })
+</script>
 
 
 
